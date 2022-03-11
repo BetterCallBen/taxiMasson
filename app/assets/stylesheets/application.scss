@@ -11,6 +11,20 @@
 @import "components/index";
 @import "pages/index";
 
-.color {
-  color: red;
+p {
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}
+body {
+  color: white;
+  font-family: 'Aleo', serif;
+}
+.font-300 {
+  font-family: 'Aleo', serif;
+  font-weight: 300;
+}
+.font-1em {
+  font-size: 1em;
 }

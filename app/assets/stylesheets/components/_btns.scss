@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+}
+
+.btn-contact {
+  padding: 1.6vh 7vw;
+  background-color: #4058A8;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+  &:hover {
+    color: white;
+  }
+}

@@ -1,1 +1,51 @@
-// Specific CSS for your home-page
+.bg-home {
+  background-image: linear-gradient(#4058a82d, #4058a821), url("taxi.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number {
+  padding: 10px;
+  margin: 0;
+}
+.title-home {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  margin-bottom: 50px;
+  font-size: 3.5rem;
+  letter-spacing: 0.04em;
+}
+.font-paytone {
+  font-family: 'Paytone One', sans-serif;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
+
+.btns-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.convention {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}

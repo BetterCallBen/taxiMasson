@@ -1,6 +1,29 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="bg-home">
 
-<p class="color">
-  color
-</p>
+  <div class="logo-number">
+    <%= image_tag("logo-taxi.jpg", alt: "logo taxi", class: "logo-taxi") %>
+    <h3 class="number">06 19 95 29 72</h3>
+  </div>
+
+  <div class="main-container">
+    <div class="title-home">
+      <h1 class="title font-paytone">Taxi Masson</h1>
+    </div>
+
+    <div class="main-text">
+      <p class="text-center"> Nous vous proposons une prestation entièrement personnalisé sur Lyon et toute la région Rhône alpes auvergne.</p>
+      <p class="text-center"> Vous aurez à votre disposition un chauffeur avec un véhicule récent et bien entretenu.</p>
+      <p class="text-center"> Notre objectif est de vous satisfaire.</p>
+    </div>
+
+    <div class="btns-home">
+      <%= link_to "Contactez-nous", new_contact_path, class: "btn-contact" %>
+    </div>
+
+    <div class="convention">
+      <h5 class="font-300 font-1em">Le plaisir d'être bien conduit</h5>
+      <h2 class="font-paytone">CONVENTIONNÉ CPAM</h2>
+    </div>
+  </div>
+
+</div>
