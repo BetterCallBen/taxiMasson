@@ -39,8 +39,6 @@
   }
 }
 
-
-
 .btns-home {
   display: flex;
   flex-direction: column;
@@ -64,7 +62,7 @@
   height: 3px;
   width: 60px;
   background-color: #4058A8;
-  margin: 65px auto 35px ;
+  margin: 65px auto 25px ;
 }
 
 .second-title {
@@ -86,6 +84,11 @@
   font-family: 'Aleo', serif;
   font-size: 1.3rem;
   margin: 40px auto;
+}
+@media (max-width: 768px) {
+  .second-text {
+    width: 85vw;
+  }
 }
 
 .convention {
