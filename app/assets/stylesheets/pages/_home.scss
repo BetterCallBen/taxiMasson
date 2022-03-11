@@ -1,5 +1,5 @@
 .bg-home {
-  background-image: linear-gradient(#4058a82d, #4058a821), url("taxi.jpg");
+  background-image: linear-gradient(#4058a831, #4058a82c), url("taxi.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -22,9 +22,17 @@
   margin-bottom: 50px;
   font-size: 1.2em;
 }
+.title2 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 3rem;
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 3rem;
+  }
+  .title2 {
+    font-size: 2.7rem;
   }
   .main-text {
     font-size: 1rem;
@@ -41,9 +49,54 @@
   margin-bottom: 60px;
 }
 
-.convention {
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+.number {
+  font-size: 2.7rem;
+}
+
+
+.little-bar-center {
+  height: 3px;
+  width: 60px;
+  background-color: #4058A8;
+  margin: 65px auto 35px ;
+}
+
+.second-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4058A8;
+}
+
+
+.second-text {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #55626A;
+  font-family: 'Aleo', serif;
+  font-size: 1.3rem;
+  margin: 40px auto;
+}
+
+.convention {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.convention-text {
+  color: #4058A8;
+  margin-bottom: 50px;
 }

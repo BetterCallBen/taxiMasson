@@ -1,8 +1,5 @@
 <div class="bg-home">
-  <div class="nav">
-    <%= image_tag("logo-taxi.jpg", alt: "logo taxi", class: "logo-taxi") %>
-    <h3 class="number">06 19 95 29 72</h3>
-  </div>
+
   <div class="main-container">
     <div class="title-home">
       <h1 class="title font-paytone">Taxi Masson</h1>
@@ -19,10 +16,26 @@
       <%= link_to "Contactez-nous", new_contact_path, class: "btn-contact" %>
     </div>
 
-    <div class="convention">
-      <h5 class="font-300 font-1em">Le plaisir d'être bien conduit</h5>
-      <h2 class="font-paytone">CONVENTIONNÉ CPAM</h2>
+    <div class="contact">
+      <h5 class="font-300 font-1em grey">Le plaisir d'être bien conduit</h5>
+      <h2 class="font-paytone number">06 19 95 29 72</h2>
     </div>
   </div>
 
+</div>
+
+<div class="little-bar-center"></div>
+
+<div class="second-title">
+  <h1 class="title2 text-center">Apprenez à nous connaître</h1>
+</div>
+
+<div class="second-text">
+  <p class="text-center">Nous vous conduisons et assurons le retour aux différentes structures médicales de la région Rhône Alpes Auvergne</p>
+  <p class="text-center">Nos taxis conventionnés sont à votre disposition pour vous accompagner et vous guider dans votre parcours de soins</p>
+</div>
+
+<div class="convention">
+  <%= image_tag("logo-taxi.png", alt: "logo taxi", class: "logo-taxi") %>
+  <h3 class="convention-text font-paytone">CONVENTIONNÉ CPAM</h3>
 </div>
