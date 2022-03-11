@@ -14,9 +14,6 @@
   font-size: 3.5rem;
   letter-spacing: 0.04em;
 }
-.font-paytone {
-  font-family: 'Paytone One', sans-serif;
-}
 .main-text {
   display: flex;
   flex-direction: column;
@@ -25,6 +22,16 @@
   margin-bottom: 50px;
   font-size: 1.2em;
 }
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .main-text {
+    font-size: 1rem;
+  }
+}
+
+
 
 .btns-home {
   display: flex;

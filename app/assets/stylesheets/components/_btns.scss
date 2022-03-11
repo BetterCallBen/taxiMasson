@@ -3,7 +3,7 @@ a {
 }
 
 .btn-contact {
-  width: 17vw;
+  width: 21vw;
   height: 6vh;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ a {
   }
 }
 .btn-reserv {
-  width: 17vw;
+  width: 21vw;
   height: 6vh;
   display: flex;
   justify-content: center;
@@ -28,5 +28,14 @@ a {
   transition: 0.2s;
   &:hover {
     color: #4058A8;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-reserv {
+    width: 40vw;
+  }
+  .btn-contact {
+    width: 40vw;
   }
 }
