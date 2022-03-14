@@ -5,7 +5,7 @@ class ContactMailer < ApplicationMailer
     @object = params[:object]
     @message = params[:message]
     mail(
-      to: "bcbenjb@gmail.com",
+      to: "benjbdk@gmail.com",
       from: @email,
       subject: @object
     )
