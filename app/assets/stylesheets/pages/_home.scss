@@ -111,3 +111,12 @@
   color: #4058A8;
   margin-bottom: 50px;
 }
+
+.title3 {
+  font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+  .title3 {
+    font-size: 1.8rem;
+  }
+}

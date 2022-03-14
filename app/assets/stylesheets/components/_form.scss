@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
   padding: 64px 32px 96px;
 }
 
@@ -19,13 +19,11 @@
   }
 }
 .form-control {
-  border-bottom: 1px solid rgb(5, 0, 32);
   color: #4058a8;
   border: none;
   &:focus {
     color: #4058a8;
     box-shadow: none;
-    border-bottom: 1px solid rgb(5, 0, 32);
   }
   &::placeholder {
     color: #4058a8;
