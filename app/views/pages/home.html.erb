@@ -1,24 +1,29 @@
 <div class="bg-home">
 
   <div class="main-container">
-    <div class="title-home">
-      <h1 class="title font-paytone">Taxi Masson</h1>
+
+    <div class="fade-in from-top1">
+      <div class="title-home">
+        <h1 class="title font-paytone">Taxi Florent Masson</h1>
+      </div>
+
+      <div class="main-text">
+        <p class="text-center"> Nous vous proposons une prestation entièrement personnalisée sur Lyon et toute la région Rhône Alpes Auvergne.</p>
+        <p class="text-center"> Vous aurez à votre disposition un chauffeur avec un véhicule récent et bien entretenu.</p>
+        <p class="text-center"> Notre objectif est de vous satisfaire.</p>
+      </div>
+
+      <div class="btns-home">
+        <a href="" class="btn-reserv">Réserver en ligne</a>
+        <a href="#bg-form" class="btn-contact">Contactez-nous</a>
+      </div>
     </div>
 
-    <div class="main-text">
-      <p class="text-center"> Nous vous proposons une prestation entièrement personnalisé sur Lyon et toute la région Rhône alpes auvergne.</p>
-      <p class="text-center"> Vous aurez à votre disposition un chauffeur avec un véhicule récent et bien entretenu.</p>
-      <p class="text-center"> Notre objectif est de vous satisfaire.</p>
-    </div>
-
-    <div class="btns-home">
-      <a href="" class="btn-reserv">Réserver en ligne</a>
-      <%= link_to "Contactez-nous", new_contact_path, class: "btn-contact" %>
-    </div>
-
-    <div class="contact">
-      <h5 class="font-300 font-1em grey">Le plaisir d'être bien conduit</h5>
-      <h2 class="font-paytone number">06 19 95 29 72</h2>
+    <div class="fade-in from-top2">
+      <div class="contact">
+        <h5 class="font-300 font-1em grey">Le plaisir d'être bien conduit</h5>
+        <h2 class="font-paytone number">06 19 95 29 72</h2>
+      </div>
     </div>
   </div>
 
@@ -38,4 +43,9 @@
 <div class="convention">
   <%= image_tag("logo-taxi.png", alt: "logo taxi", class: "logo-taxi") %>
   <h3 class="convention-text font-paytone">CONVENTIONNÉ CPAM</h3>
+</div>
+
+<div id="bg-form">
+  <h3 class="font-paytone">Nous sommes à votre écoute</h3>
+  <%= render "contacts/new", local: Contact.new %>
 </div>

@@ -31,11 +31,25 @@ a {
   }
 }
 
+
 @media (max-width: 768px) {
   .btn-reserv {
     width: 40vw;
   }
   .btn-contact {
     width: 40vw;
+  }
+}
+
+.btn-send {
+  width: 100%;
+  padding: 12px 64px;
+  border: none;
+  background-color: white;
+  color: #4058A8;
+  border-radius: 5px;
+  transition: 0.2s;
+  &:hover {
+    color: #4058A8;
   }
 }

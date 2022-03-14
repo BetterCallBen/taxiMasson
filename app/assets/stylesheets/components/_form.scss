@@ -1,0 +1,38 @@
+#bg-form {
+  background-color: #4058a8;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 64px 32px 96px;
+}
+
+.form-contact {
+  width: 500px;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .form-contact {
+    width: 350px;
+  }
+}
+.form-control {
+  border-bottom: 1px solid rgb(5, 0, 32);
+  color: #4058a8;
+  border: none;
+  &:focus {
+    color: #4058a8;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(5, 0, 32);
+  }
+  &::placeholder {
+    color: #4058a8;
+  }
+}
+.btn-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
