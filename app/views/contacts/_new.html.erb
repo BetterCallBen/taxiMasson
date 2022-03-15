@@ -1,8 +1,8 @@
 <div class="form-contact">
-  <%= simple_form_for local do |f| %>
+  <%= simple_form_for locale do |f| %>
     <%= f.input :name, placeholder: 'Nom', label: false %>
     <%= f.input :email, placeholder: 'Email', label: false %>
-    <%= f.input :object, placeholder: 'Objet', label: false %>
+    <%= f.input :phone, placeholder: 'Téléphone', label: false %>
     <%= f.input :message, placeholder: 'Message', label: false %>
     <div class="btn-form">
       <%= f.submit "Envoyer", class: "btn-send" %>

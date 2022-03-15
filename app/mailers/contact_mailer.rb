@@ -1,13 +1,12 @@
 class ContactMailer < ApplicationMailer
   def new_contact
-    @name = params[:name]
-    @email = params[:email]
-    @object = params[:object]
-    @message = params[:message]
+    @contact = params[:contact]
+    @name = @contact.name
+    @phone = @contact.phone
+    @message = @contact.message
     mail(
       to: "benjbdk@gmail.com",
-      from: @email,
-      subject: @object
+      subject: "Un client t'as envoyé un message"
     )
   end
 end

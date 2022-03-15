@@ -4,8 +4,15 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h3><%= @name %> t'as envoye un message</h3>
+    <h3><%= @name %> a souhaité te contacter, voilà son message : </h3>
 
     <p><%= @message %></p>
+
+
+    <% if @contact.email != "" %>
+      Contact <%= @name %> au <%= @phone %> ou par mail <%= @contact.email %>
+    <% else %>
+      Contact <%= @name %> au <%= @phone %>
+    <% end %>
   </body>
 </html>

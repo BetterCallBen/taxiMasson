@@ -5,17 +5,13 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if @contact.save
-      ContactMailer.with(name: @contact.name, email: @contact.email, object: @contact.object, message: @contact.message).new_contact.deliver_later
-      redirect_to root_path
-    else
-      render :new
-    end
+    ContactMailer.with(contact: @contact).new_contact.deliver_later if @contact.save
+    redirect_to root_path
   end
 
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :object, :message)
+    params.require(:contact).permit(:name, :email, :phone, :object, :message)
   end
 end
